@@ -1,0 +1,68 @@
+
+body {
+  box-sizing: border-box;
+  background-color: black;
+  font-family: 'Inknut Antiqua', serif;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(../images/main_page_bkg.jpg);
+  width: 99%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  font-family: 'Inknut Antiqua', serif;
+  text-align: center;
+  font-size: 2.5em;
+  color: black;
+}
+
+.main_page {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2em;
+}
+.main_page_columns {
+  flex: 1;
+
+}
+
+.front_page_bio {
+  background-color: rgba(153, 123, 56, .2);
+  padding: 1em;
+  text-align: justify;
+}
+
+.top, .bottom, .left, .right {
+  background: #997B38;;
+  position: fixed;
+}
+.left, .right {
+  top: 0; bottom: 0;
+  width: 15px;
+    }
+.left { left: 0; }
+.right { right: 0; }
+    
+.top, .bottom {
+  left: 0; right: 0;
+  height: 15px;
+    }
+.top { 
+  top: 0; 
+    }
+.bottom { 
+  bottom: 0; 
+    }
+
+@media only screen and (max-width: 500px), only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+	.top, .bottom, .left, .right { 
+    display: none; 
+    };
+  background-size: cover;
+
+}
