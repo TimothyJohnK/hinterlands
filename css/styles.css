@@ -33,8 +33,9 @@ h1 {
 
 .front_page_bio {
   background-color: rgba(153, 123, 56, .2);
-  padding: 1em;
+  padding: .6em;
   text-align: justify;
+  border-radius: 5px;
 }
 
 .top, .bottom, .left, .right {
@@ -62,8 +63,13 @@ h1 {
 @media only screen and (max-width: 500px){
 	.top, .bottom, .left, .right { 
     display: none; 
-    };
+    }
   background-size: cover;
+
+  .main_page {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
 
 }
 @media only screen and (min-width: 501px) and (max-width: 768px) {
