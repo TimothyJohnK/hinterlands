@@ -59,10 +59,27 @@ h1 {
   bottom: 0; 
     }
 
-@media only screen and (max-width: 500px), only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+@media only screen and (max-width: 500px){
 	.top, .bottom, .left, .right { 
     display: none; 
     };
   background-size: cover;
 
 }
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+
+}
+@media only screen and (min-width: 769px) and (max-width:991px) {
+
+}
+@media only screen and (min-width:992px) and (max-width:1199px){
+  .main_page_columns {
+    flex: 0 0 30em;
+  }
+}
+@media only screen and (min-width:1201px) {
+  .main_page_columns {
+    flex: 0 0 35em;
+  }
+}
+
