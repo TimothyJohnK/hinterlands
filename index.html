@@ -17,16 +17,32 @@
 
     <header>
         <h1>The Hinterlands</h1>
+        <div class=subheader>
+        <h3>is</h3>
+        <h3>Paul Fonfara (clarinet, whistling, voice) and Tim Kirchhof (guitar, voice, textures)</h3>
+        </div>
     </header>
 
     <section class='main_page'>
         <div class='main_page_columns'>
-
+            <img class ='clarandguitarimg' src='images/clarandguit.jpg'>
         </div>
-        <div class='main_page_columns front_page_bio'>
-            The Hinterlands is Tim Kirchhof and Paul Fonfara.  They weave of a tapestry of stories through music.  The styles they play are many: trad-jazz, Dixieland, old-timey cowboy songs, heartfelt blues, songs of the field and prairie and songs of the mountains and the swamp.  They play American music.
-        </div>
+        <section>
+            <div class='main_page_columns front_page_bio'>
+                The Hinterlands weave of a tapestry of stories through music.  The styles they play are many: trad-jazz, Dixieland, old-timey cowboy songs, heartfelt blues, songs of the field and prairie and songs of the mountains and the swamps.  They play American music.
+            </div>
+        </section>
     </section>
+    <div></div>
+    <footer class='copyright'>©</footer>
+
 </body>
+<script>
+  var dateCnstnt = new Date(),
+    copyright = document.getElementsByClassName('copyright')[0];
+     (function year() {
+    copyright.innerText = '© The Hinterlands ' + dateCnstnt.getFullYear()
+  })();
+</script>
 
 </html>
