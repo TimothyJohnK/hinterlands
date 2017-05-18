@@ -1,7 +1,6 @@
 
 body {
   box-sizing: border-box;
-  background-color: black;
   font-family: 'Inknut Antiqua', serif;
   font-family: 'Open Sans', sans-serif;
   background-image: url(../images/main_page_bkg.jpg);
@@ -31,9 +30,8 @@ h3 {
   color: black;
   margin-top: -1em;
   padding: 0em 1em;
-
+  text-shadow: 0px 1px 10px gray;
 }
-
 .main_page {
   display: -webkit-flex;
   display: flex;
@@ -104,13 +102,14 @@ footer {
     }
 
 @media only screen and (max-width: 500px){
-	.top, .bottom, .left, .right { 
-    display: none; 
-    }
+  h1 {
+    font-size: 2em;
+  }
   .clarandguitarimg {
     padding: 0em;
     margin: 0em;
     justify-content: center;
+    border-radius: 5px;
   }
   .front_page_bio {
     box-shadow: 0px 0px 0px gray;
@@ -120,7 +119,6 @@ footer {
     background-clip: padding-box;
   }
   .main_page {
-    
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
@@ -128,9 +126,36 @@ footer {
     justify-content: center;
     padding: 2em;
   }
+	.top, .bottom, .left, .right { 
+    display: none; 
+    }
+
 }
 @media only screen and (min-width: 501px) and (max-width: 768px) {
-
+  .main_page {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+  }
+  .main_page_columns {
+    flex: 0 0 14em;
+  }
+  .front_page_bio {
+    box-shadow: 0px 0px 0px gray;
+    background-color: rgba(153, 123, 56, .85);
+    border: solid rgba(153, 123, 56, .85);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+  .clarandguitarimg {
+    width:75%;
+    margin: 0em 2.6em;
+    padding: 0em;
+    border-radius: 5px; 
+  }
 }
 @media only screen and (min-width: 769px) and (max-width:991px) {
 
@@ -142,7 +167,7 @@ footer {
 }
 @media only screen and (min-width:1201px) {
   .main_page_columns {
-    flex: 0 0 35em;
+    flex: 0 0 40em;
   }
 }
 
